@@ -10,14 +10,8 @@ import { familyGallery, familyGalleryIntro, familyGalleryOutro } from "@/data/fa
 export function JustForFun() {
   const [showResponses, setShowResponses] = useState(false);
 
-  const scrollNext = () =>
-    document.getElementById("songs")?.scrollIntoView({ behavior: "smooth", block: "start" });
-
   return (
-    <section
-      id="fun"
-      className="relative scroll-mt-24 overflow-hidden px-5 py-24 sm:px-8 sm:py-32"
-    >
+    <section id="fun" className="relative scroll-mt-24 overflow-hidden px-5 py-24 sm:px-8 sm:py-32">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(900px_460px_at_20%_0%,var(--sky-soft),transparent_62%),radial-gradient(900px_480px_at_85%_80%,var(--blush-soft),transparent_62%)] opacity-80"
@@ -103,13 +97,6 @@ export function JustForFun() {
               </p>
             ))}
           </div>
-          <button
-            type="button"
-            onClick={scrollNext}
-            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-8 py-3 text-sm tracking-wide text-primary-foreground shadow-[var(--shadow-soft)] transition-all duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            {familyGalleryOutro.cta}
-          </button>
         </Reveal>
       </div>
 

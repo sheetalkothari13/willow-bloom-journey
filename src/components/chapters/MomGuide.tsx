@@ -73,12 +73,6 @@ export function MomGuide() {
   const [category, setCategory] = useState<string | null>(null);
   const active = notSureCategories.find((c) => c.id === category);
 
-  const scrollAhead = () => {
-    document
-      .getElementById(guideTransition.targetId)
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
   return (
     <section
       id="guide"
@@ -190,13 +184,6 @@ export function MomGuide() {
           <p className="mx-auto max-w-lg text-balance font-display text-3xl leading-snug">
             <span className="text-gradient-petal">{guideTransition.text}</span>
           </p>
-          <button
-            type="button"
-            onClick={scrollAhead}
-            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-8 py-3 text-sm tracking-wide text-primary-foreground shadow-[var(--shadow-soft)] transition-all duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            {guideTransition.cta}
-          </button>
         </Reveal>
       </div>
     </section>

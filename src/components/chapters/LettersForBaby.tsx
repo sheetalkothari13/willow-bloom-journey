@@ -4,9 +4,6 @@ import { LettersGallery } from "@/components/gallery/LettersGallery";
 import { babyLetters, lettersIntro, lettersOutro } from "@/data/babyLetters";
 
 export function LettersForBaby() {
-  const scrollNext = () =>
-    document.getElementById("fun")?.scrollIntoView({ behavior: "smooth", block: "start" });
-
   return (
     <section
       id="letters"
@@ -59,13 +56,6 @@ export function LettersForBaby() {
           <p className="mx-auto mt-6 max-w-lg text-pretty text-sm leading-relaxed text-muted-foreground">
             {lettersOutro.transition}
           </p>
-          <button
-            type="button"
-            onClick={scrollNext}
-            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-8 py-3 text-sm tracking-wide text-primary-foreground shadow-[var(--shadow-soft)] transition-all duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            {lettersOutro.cta}
-          </button>
         </Reveal>
       </div>
     </section>

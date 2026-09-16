@@ -4,9 +4,6 @@ import { ScrapbookGallery } from "@/components/gallery/ScrapbookGallery";
 import { memories, memoriesIntro, memoriesOutro } from "@/data/memories";
 
 export function BeforeMom() {
-  const scrollNext = () =>
-    document.getElementById("letters")?.scrollIntoView({ behavior: "smooth", block: "start" });
-
   return (
     <section
       id="before"
@@ -56,13 +53,6 @@ export function BeforeMom() {
               </p>
             ))}
           </div>
-          <button
-            type="button"
-            onClick={scrollNext}
-            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-8 py-3 text-sm tracking-wide text-primary-foreground shadow-[var(--shadow-soft)] transition-all duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            {memoriesOutro.cta}
-          </button>
         </Reveal>
       </div>
     </section>
