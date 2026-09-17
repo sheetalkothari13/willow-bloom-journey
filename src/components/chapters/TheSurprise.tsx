@@ -95,7 +95,7 @@ function Envelope({ phase }: { phase: Phase }) {
         {/* letter sliding out */}
         <div
           className={cn(
-            "absolute inset-x-[8%] bottom-[10%] top-[14%] rounded-xl border border-gold-soft bg-card px-4 py-6 text-center shadow-[var(--shadow-soft)]",
+            "absolute inset-x-[8%] bottom-[10%] top-[14%] z-30 rounded-xl border border-gold-soft bg-card px-4 py-6 text-center shadow-[var(--shadow-soft)]",
             opening ? "animate-letter-rise opacity-0" : "opacity-0",
           )}
         >
@@ -109,18 +109,18 @@ function Envelope({ phase }: { phase: Phase }) {
 
         {/* front pocket, drawn above the letter */}
         <div
-          className="absolute inset-0 rounded-xl bg-sky"
+          className="absolute inset-0 z-10 rounded-xl bg-sky"
           style={{ clipPath: "polygon(0 30%, 50% 78%, 100% 30%, 100% 100%, 0 100%)" }}
         />
         <div
-          className="absolute inset-0 rounded-xl bg-blush/85"
+          className="absolute inset-0 z-10 rounded-xl bg-blush/85"
           style={{ clipPath: "polygon(0 100%, 50% 40%, 100% 100%)" }}
         />
 
         {/* flap */}
         <div
           className={cn(
-            "absolute inset-x-0 top-0 h-[58%] origin-top",
+            "absolute inset-x-0 top-0 z-20 h-[58%] origin-top",
             opening && "animate-flap-open",
           )}
           style={{ transformStyle: "preserve-3d" }}
