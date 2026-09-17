@@ -47,7 +47,13 @@ export const milestones: Milestone[] = [
     emoji: "🌱",
     title: "Week 6 / First Beginning",
     caption: "The week we found out you were on your way.",
-    media: [],
+    media: [
+      {
+        type: "image",
+        src: "/images/milestones/img-1.jpg",
+        alt: "Week 6 / First Beginning",
+      },
+    ],
   },
   {
     id: "first-scan",
@@ -75,7 +81,13 @@ export const milestones: Milestone[] = [
     emoji: "🌸",
     title: "First Trimester",
     caption: "Slow mornings, big news, quiet joy.",
-    media: [],
+    media: [
+      {
+        type: "image",
+        src: "/images/milestones/img-1.jpg",
+        alt: "Week 6 / First Beginning",
+      },
+    ],
   },
   {
     id: "second-trimester",
