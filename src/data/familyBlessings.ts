@@ -173,7 +173,7 @@ const people: Array<{
     relation: "Chachu",
     photo: "/images/blessings/person-05.jpg",
     message:
-      "Little one, your Chachu is already excited to meet you! You have so many adventures, laughs, and memories waiting for you.",
+      "A new little member is joining our family, and our hearts are already full. Wishing you both a safe, healthy, and beautiful journey ahead.",
   },
   {
     name: "Chachi",
@@ -194,28 +194,28 @@ const people: Array<{
     relation: "Bro",
     photo: "/images/blessings/person-08.jpg",
     message:
-      "Hey little one! Your Bro is already waiting to spoil you, make you laugh, and create some unforgettable memories with you.",
+      "Hey little one! Your Mama is already waiting to spoil you, make you laugh, and create some unforgettable memories with you.",
   },
   {
     name: "Tillu",
     relation: "Tillu Anna",
     photo: "/images/blessings/person-09.jpg",
     message:
-      "Our little star, you are already loved more than you know. Tillu Anna is waiting for the day we finally get to meet you!",
+      "Our little star, you are already loved more than you know. Tillu Mama is waiting for the day we finally get to meet you!",
   },
   {
     name: "Sheetu",
     relation: "Sister",
     photo: "/images/blessings/person-10.jpg",
     message:
-      "To Mom and our little baby, sending you both endless love. I cannot wait to watch our family grow and make beautiful memories together.",
+      "To Akka and our little baby, sending you both endless love. I cannot wait spoil youand make beautiful memories together.",
   },
   {
     name: "Kanni",
     relation: "Small Bro",
     photo: "/images/blessings/person-11.jpg",
     message:
-      "Little baby, you already have one very excited uncle waiting for you! Get ready for lots of love, laughter, and fun.",
+      "Little baby, excited Kanni Mama is waiting for you! Get ready for lots of love, laughter, and fun.",
   },
   {
     name: "Ritesh",
